@@ -1,0 +1,264 @@
+/*	uMail CSS File For Client's Home Page	*/
+
+* {
+	margin				: 0px;
+	padding				: 0px;
+	font-family			: calibri, sans-serif;
+	font-size			: 1.01em;
+}
+
+header, nav, footer, aside, section {
+	display				: block;
+}
+
+body {
+	width				: 100%;
+	height				: 100%;
+	display				: -webkit-box;
+	-webkit-box-orient	: vertical;
+	-webkit-box-pack	: center;
+}
+
+#mainDiv {
+	min-width			: 800px;
+/*	border				: 2px solid green;		*/
+	display				: -webkit-box;
+	-webkit-box-orient	: vertical;
+	-webkit-box-flex	: 1;
+}
+
+#mainHeader {
+	cursor				: default;
+	background-color	: #008080;
+/*	border				: 2px solid red;	*/
+	display				: -webkit-box;
+	-webkit-box-orient	: horizontal;
+	-webkit-box-flex	: 1;
+}
+
+#titleDiv {
+	-webkit-box-flex	: 4;
+}
+
+#title {
+	padding				: 5px;
+	font-size			: 4.2em;
+	font-family			: "Tahoma", "arial", "Sans-serif";
+	color				: #ffc000;
+}
+
+#logoutDiv {
+/*	border				: 2px solid orange;	*/
+	-webkit-box-flex	: 1;
+	display				: -webkit-box;
+	-webkit-box-pack	: end;
+}
+
+#logoutBtn {
+	margin				: 40% 8px auto 0px; 
+	padding				: 3px;
+	font				: normal 1em tahoma;
+	color				: black;
+	background			: #71adad;
+	-webkit-transition	: background 0.4s, color 0.2s;
+}
+
+#logoutBtn:hover {
+	background			: #15942b;
+	color				: #ffffff;
+}
+
+#centerDiv {
+	height				: 100%;
+	display				: -webkit-box;
+	-webkit-box-orient	: horizontal;
+	background-color	: #f0fbfb;
+/*	border				: 3px solid orange;	*/
+}
+
+nav {
+	width				: 120px;
+	height				: 100%;
+	
+	padding-bottom		: 20px;
+/*	-webkit-box-flex	: 1;	*/
+	background			: #bee5d9;
+}
+
+#compose {
+	margin				: 13px auto 15px 15px;
+	padding				: 3px;
+	background-color	: #ffcd94;
+	color				: black;
+	font				: normal 1.01em tahoma;
+	opacity				: 0.7;
+	-webkit-transition	: background 0.8s, color 0.3s, opacity 0.3s;
+}
+
+#compose:hover {
+	background			: #d88e1b;
+	color				: white;
+	opacity				: 1;
+}
+
+li {
+	padding-left		: 10px;
+	list-style			: none;
+	font				: normal 1.3em calibri;
+	color				: #fd7214;
+	opacity				: 0.7;
+	-webkit-transition	: font 0.1s, background-color 0.1s, color 0.3s, opacity 0.8s;
+}
+
+li:hover {
+	cursor				: pointer;
+	font				: bold 1.4em calibri;
+	background-color	: #d2d2d2;
+	color				: #5885a2;
+	opacity				: 1;
+}
+
+section {
+	margin				: 5px;
+	-webkit-box-flex	: 6;
+/*	border				: 2px dotted black;	*/
+}
+
+#toolbar {
+	margin				: 10px auto 15px 5px;
+/*	background-color	: white;	*/
+/*	border				: 1px dashed blue;	*/
+	display				: -webkit-box;
+	-webkit-box-orient	: horizontal;
+}
+
+input[form='mailForm'] {
+	display				: none;
+	font				: normal 1em calibri;
+	padding				: 3px;
+	opacity				: 0.6;
+	-webkit-transition	: color 0.2s, background-color 0.8s, opacity 0.5s;
+}
+
+input[form='mailForm']:hover {
+	color				: #ffffff;
+	opacity				: 1;
+}
+
+input[name='delete']:hover {
+	background-color	: #ed2d26;
+}
+
+input[name='restore']:hover {
+	background-color	: green;
+}
+
+#mailDetailDiv {
+	display				: none;
+	width				: 100%;
+	height				: 100%;	
+}
+
+header input {
+	font				: normal 1em calibri;
+	padding				: 3px;
+	opacity				: 0.6;
+	-webkit-transition	: color 0.2s, background-color 0.8s, opacity 0.5s;
+}
+
+header input:hover {
+	color				: #ffffff;
+	opacity				: 1;
+}
+
+input[name='back']:hover {
+	background-color	: gray;
+}
+
+input[name='reply']:hover {
+	background-color	: #7175b2;
+}
+
+input[name='forward']:hover {
+	background-color	: #c5ae2a;
+}
+
+td {
+	background-color	: white;
+	border-bottom		: 1px solid orange;
+	padding				: 5px;
+}
+
+td+td{
+	cursor				: pointer;
+}
+
+textarea[name='messageTA'] {
+	width				: 98%;
+	max-width			: 98%;
+	min-height			: 200px;
+	height				: 100%;
+	max-height			: 100%;
+	font				: normal 1.1em arial;
+	background-color	: white;
+}
+
+#composeMailRootDiv {
+	
+	display				: -webkit-box;
+	display				: none;
+	-webkit-box-pack	: center;
+	position			: absolute;
+	top					: 0px;
+	left				: 0px;
+	width				: 100%;
+	height				: 100%;
+	background-color	: rgba(0,0,0,0.86);
+	-webkit-transition	: background-color 1s;
+}
+
+#composeMailRootDiv:hover {
+	background-color	: rgba(0,0,0,0.7);
+}
+
+#composeMailCenterDiv {
+	display				: -webkit-box;
+	margin				: 5%;
+	width				: 50%;
+	height				: 82%;
+	border				: 1px solid black;
+	border-radius		: 25px;
+	-webkit-box-shadow	: rgba(110,110,110,0.7) 2px 4px 10px;
+	background-color	: #008080;
+}
+
+#composeForm {
+	-webkit-box-flex	: 1;
+	margin				: 15px;
+	height				: 98%;
+	width				: 98%;
+}
+
+input[type='email'], input[type='text'] {
+	-webkit-box-flex	: 1;
+	width				: 95%;
+	padding				: 3px;
+	background-color	: #bedee5;
+}
+
+form textarea {
+	-webkit-box-flex	: 1;
+	width				: 95%;
+	max-width			: 95%;
+	height				: 40%;
+	max-height			: 40%;
+	padding				: 3px;
+	background-color	: #bedee5;
+}
+
+input[value='Send'], input[value='Save'], input[value='Discard'] {
+	-webkit-box-flex	: 1;
+	cursor				: pointer;
+	padding				: 0.5%;
+}
+

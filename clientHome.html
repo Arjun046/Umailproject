@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<title>Umail</title>
+		<meta charset='utf-8' />
+		<link rel='StyleSheet' type='text/html' href='css/clientHome.css' />
+		<script src='javascript/clientHome.js'> </script>
+	</head>
+	
+	<body>
+		<div id='mainDiv'>
+			<header id='mainHeader'>
+				<div id='titleDiv'>
+					<h2 id='title'> Umail </h2>
+				</div>
+				<div id='logoutDiv'>
+					<input type='button' id='logoutBtn' name='logout' value='Logout' onclick='logMeOut()' />
+				</div>
+			</header>
+			<div id='centerDiv'>
+				<nav id='options'>
+					<input type='button' id='compose' name='compose' value='Compose' onclick='showComposeDiv()' />
+					<input type='hidden' id='selectedOption' value='inbox' />
+					<ul>
+						<li name='option' value='inbox' onClick='optionClicked("inbox")'>Inbox</li>
+						<li name='option' value='sentmail' onClick='optionClicked("sentmail")'>Sent Mail</li>
+						<li name='option' value='drafts' onClick='optionClicked("drafts")'>Drafts</li>
+						<li name='option' value='outbox' onClick='optionClicked("outbox")'>Outbox</li>
+						<li name='option' value='trash' onClick='optionClicked("trash")'>Trash</li>
+					</ul>
+				</nav>
+				
+				<section id='mainSection'>
+					<div id='mailsDiv'>
+						<header id='toolbar'>
+							<input type='checkbox' id='selectAll' name='selectall' onClick='selectAllMails()'/>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type='submit' id='delete' name='delete' value='Delete' form='mailForm' formaction='DeleteMails'/>
+							<input type='submit' id='restore' name='restore' value='Restore' form='mailForm' formaction='RestoreMails'/>
+						</header>
+						<form name='mailForm' method='post'>
+							<table cellspacing='0px'>
+								<tr>
+									<td><input type='checkbox' name='check' id='check' value='1'/></td>
+									<td width='15%' name='msg0' onClick='showMailDetail("msg0")' >From User</td>
+									<td width='75%' name='msg0' onClick='showMailDetail("msg0")' >Subject Will Go In This Column</td>
+									<td width='10%' name='msg0' onClick='showMailDetail("msg0")' >09-03-2015</td>
+									<input type='hidden' value='This is a hidden text' name='msg0' />
+								</tr>
+								<tr>
+									<td ><input type='checkbox' name='check' id='check' value='2'/></td>
+									<td width='15%' name='msg1' onClick='showMailDetail("msg1")'>Arjun Suthar</td>
+									<td width='75%' name='msg1' onClick='showMailDetail("msg2")'>This Is My Subject For This Mail</td>
+									<td width='10%' name='msg1' onClick='showMailDetail("msg3")'>10-11-2014</td>
+									<input type='hidden' value='Hey is 2nd hidden text' name='msg1' />
+								</tr>
+							</table>
+						</form>
+					</div>
+					<div id='mailDetailDiv'>
+						<header id='toolbar'>
+							<input type='button' id='back' name='back' value='Back' onclick='hideMailDetail()'/>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type='button' id='reply' name='reply' value='Reply' />
+							<input type='button' id='forward' name='forward' value='Forward' />
+						</header>
+						<font size='1.1em'><b>From &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b> &nbsp;<span id='from'>Arjun Suthar</span> </br>
+						<b>Subject &nbsp; :</b> &nbsp;<span id='subject'>The Subject of Mail</span> </br> </br>
+						</font>
+						<textarea name='messageTA' id='msgContent'>This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.This is a mail.
+						</textarea>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div id='composeMailRootDiv' onClick='outerClicked(window.event)'>
+			<div id='composeMailCenterDiv' onmouseover='darkenBackground()' onmouseout='blurBackground()'>
+				<form method='post' id='composeForm' >
+					<font color='cyan' size='1.1em'>To: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='email' name='to' maxlength='30' placeholder='A User ID' required onfocus='darkenBackground()' /> </br>
+					Cc: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='email' name='cc' placeholder='User-ID seperated with a Whitespace' onfocus='darkenBackground()' /> </br>
+					Bcc: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='email' name='bcc' placeholder='User-ID seperated with a Whitespace' onfocus='darkenBackground()' /> </br>
+					Subject: <input type='text' name='subject' placeholder='Mandatory To Fill' required onfocus='darkenBackground()' /> </br> </br>
+					</font>
+					<textarea name='content' placeholder='Content' onfocus='darkenBackground()'></textarea> </br>
+					<input type='submit' id='sendBtn' name='sendBtn' value='Send' formaction='SendMail' />
+					<input type='submit' id='saveBtn' name='saveBtn' value='Save' formaction='SaveMail' />
+					<input type='button' value='Discard' onClick='closeComposeMail()' />
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

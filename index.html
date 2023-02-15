@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang='en'>
+	<head> 
+		<meta charset='utf-8' />
+		<title> Umail </title>
+		<link rel='Stylesheet' type='text/css' href='css/HomePage.css'/>
+	</head>
+	<body>
+		<div id='topBar'>
+			<div id='titleDiv'>
+				<h2> Umail </h2>
+			</div>
+			<div id='loginDiv'>
+				<form method='post' action='Login'>
+					<table rule='none' cellpadding='2' cellspacing='5'>
+						<tr> 
+							<td> 
+								<input type='text' name='userid' id='userid' class='login' placeholder='User ID' 
+										size='15' maxlength='16' autocomplete='on' autofocus required /> 
+							</td>
+							<td> 
+								<input type='password' name='password' id='password' class='login' placeholder='Password'
+										size='15' maxlength='16' required /> 
+							</td>
+							<td> <input type='submit' id='loginBtn' value='Login'
+										onfocus='highlightLoginBtn()' onblur='resetLoginBtn()' /> 
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<div id='centerDiv'>
+			<div id='signupDiv'>
+				<h3 id='signupHeading'> Sign Up For Free !</h3>
+				<form method='post' action='Signup'>
+					<table rule='none' cellpadding='2' cellspacing='5'>
+						<tr>
+							<td>
+								<input type='text' name='usersname' class='signup' placeholder=' Full Name'
+									size='20' maxlength='30' required />
+							</td>
+						</tr>
+						<tr>
+							<td> 
+								<input type='text' name='userid' class='signup' placeholder=' User ID'
+									size='20' maxlength='30' pattern='[a-zA-Z0-9!$_-.]' required />
+							</td>
+						</tr>
+						<tr>
+							<td> 
+								<input type='password' name='password' class='signup' placeholder=' New Password'
+									size='20' maxlength='30' required />
+							</td>
+						</tr>
+						<tr>
+							<td> 
+								<input type='password' name='confirmPassword' class='signup' placeholder=' Confirm Password'
+									size='20' maxlength='30' required />
+							</td>
+						</tr>
+						<tr>
+							<td> 
+								<input type='number' name='mobileNo' class='signup' placeholder=' Mobile Number'
+									size='20' maxlength='10' pattern='[0-9]' min='1000000000' max='9999999999' />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type='submit' name='signup' id='signupBtn' value='Sign Up' />
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div id='imgDiv'>
+			</div>
+		</div>
+		<footer>
+			<div id='btmDiv'>
+				<span id='footTitle'> Developed By Arjun Suthar </span>
+			</div>
+		</footer>
+	</body>
+</html>

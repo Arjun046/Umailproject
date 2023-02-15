@@ -1,0 +1,152 @@
+/* uMail HomePage CSS */
+
+* {
+	margin				: 0px;
+	padding				: 0px;
+	box-sizing			: border-box;
+}
+
+body {
+	background-color	: #daf1ff;
+	width				: 100%;
+	height				: 100%;
+}
+
+h2 {
+	display: inline;
+	font-size: 4.2em;
+	font-family: "Tahoma", "arial", "Sans-serif";
+	color: #ffc000;
+	margin: 0px;
+/*	background-color: black; */
+}
+
+#topBar {
+	display: block;
+	height: 100px;
+	background-color: #008080;
+	border-bottom: 2px solid #efaa2f;
+	margin: 0px;
+}
+
+#titleDiv {
+	float: left;
+	margin-left: 20px;
+	margin-right: 0px;
+	padding: 5px;
+/*	border: 1px solid red;	*/
+}
+
+#loginDiv {
+	width		: 500px;
+	height		: 50px;
+	display		: inline;
+	float		: left;
+/*	border		: 1px solid black;	*/
+	margin-top	: 28px;
+	margin-left	: 0px;
+	padding		: 0px;
+	position	: relative;
+	left		: 43%
+}
+
+.login {
+	font-size	: 1.1em;
+	padding		: 4px;
+}
+
+#loginBtn {
+	padding		: 4px;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #dae4ff;
+	background: #71adad;
+	-webkit-transition	: background-color 0.5s, color 0.5s;
+}
+
+#loginBtn:hover {
+	background-color	: #0091ff;
+	color				: white;
+}
+
+#centerDiv {
+	background-color: #daf1ff;
+	height: 100%;
+	width: 100%;
+	margin-bottom: 0px;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-flex: 1;
+}
+
+#imgDiv {
+	width: 60%;
+	margin: 30px;
+	background-image: url('../images/homeMail.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
+/*
+#mailImg {
+	position	: absolute;
+	top			: 200px;
+	left		: 700px;
+	size		: 50%;
+}
+*/
+
+#signupDiv {
+	width: 40%;
+	height: 510px;
+	display: block;
+	padding: 15px;
+	background-color: #008080;
+	clear	: both;
+}
+
+#signupHeading {
+	font-size: 2.5em;
+	font-family: Tahoma, arial, "Sans-serif";
+	margin-bottom: 10px;
+	padding: 20px;
+	padding-bottom	: 30px;
+	color: #75e398;
+}
+
+#signupBtn {
+	position	: relative;
+	padding		: 2px;
+	left		: 80%;
+	margin		: 20px 0px;
+	font-size	: 1.6em;
+	font-weight	: bold;
+	color		: #008080;
+	background	: #ccff66;
+	-webkit-transition	: background-color 0.5s, color 0.5s;
+}
+
+#signupBtn:hover {
+	background-color	: #0091ff;
+	color				: white;
+}
+
+.signup {
+	font-size: 2.5em;
+	width	:100%;
+}
+
+#btmDiv {
+	padding		: 2px;
+	background-color: #008080;
+	text-align: center;
+	border-top: 2px solid #efaa2f;
+	clear		: both;
+}
+
+#footTitle {
+	font		: caption;
+	font-size	: 1em;
+	color		: #efaa2f;
+	clear		: both;
+}

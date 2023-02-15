@@ -1,0 +1,55 @@
+/* uMail Invalid Login Page CSS */
+
+* {
+	margin				: 0px;
+	padding				: 0px;
+}
+
+body {
+	background-color	: #daf1ff;
+}
+
+#title {
+	margin				: 0px;
+	text-align			: center;
+	font				: bold 4em Tahoma;
+	border-bottom		: 2px solid #efaa2f;
+	background-color	: #008080;
+	color				: #ffc000;
+}
+
+#centerDiv {
+	margin-top			: 5%;
+	padding				: 4%;
+	width 				: 50%;
+	border				: 2px solid #ffc000;
+	background-color	: #008080;
+}
+
+p {
+	margin				: 8px auto;
+	color				: #fe8181;
+	font				: caption ;
+	font-size			: 1.1em;
+}
+
+.fields {
+	font-size			: 2em;
+}
+
+#loginBtn {
+	margin-top			: 15px;
+	padding				: 3px;
+	width				: 100%;
+	font-size			: 1.8em;
+	font-weight			: bold;
+	color				: #191970;
+	cursor				: pointer;
+	background			: #75e398;
+	-webkit-transition	: background-color 0.5s, color 0.4s;
+}
+
+#loginBtn:hover {
+	background-color	: #0091ff;
+	color				: white;
+}

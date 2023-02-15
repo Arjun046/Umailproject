@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title> Umail </title>
+		<link rel="Stylesheet" type="text/css" href="css/invalidLoginPage.css" />
+	</head>
+	<body>
+		<h2 id='title'> Umail </h2>
+		<center>
+		<div id='centerDiv'>
+		
+			<img src="images/profile.png" /> <br />
+			<p id='msg'> Invalid Username or Password </p>
+			<form method='post' action='Login'>
+				<table cellspacing=10px>
+					<tr>
+						<td> 
+							<input type="text" name="userid" id="userid" class="fields" placeholder="          User ID" 
+								size="15" maxlength="16" autocomplete="on" autofocus required />
+						</td>
+					</tr>
+					<tr>
+						<td> 
+							<input type="password" name="password" id="password" class="fields" placeholder="         Password"
+								size="15" maxlength="16" required />
+						</td>
+					</tr>
+					<tr>
+						<td align='center'>
+							<input type="submit" id="loginBtn" value="Login" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		
+		</div>
+		</center>
+		
+	</body>
+</html>
